@@ -1,0 +1,43 @@
+.snackbar {
+  position: fixed;
+
+  width: 350px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.snackbar .symbol {
+  flex: 20%;
+}
+
+.snackbar .message {
+  flex: 80%;
+  text-align: start;
+  font-weight: bold;
+}
+
+#show {
+  visibility: visible;
+  animation: fadeInOut 6s;
+}
+#hide {
+  visibility: hidden;
+}
+
+@keyframes fadeInOut {
+  0% {
+    top: 5px;
+    right: -20rem;
+  }
+  90% {
+    top: 5px;
+    right: 1rem;
+  }
+  100% {
+    top: 5px;
+    right: -20rem;
+  }
+}
