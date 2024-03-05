@@ -1,11 +1,11 @@
 import "./Snackbar.css";
-import { useRef } from "react";
+// import { useRef } from "react";
 const Snackbar = (props) => {
-  const ref = useRef();
+  //   const ref = useRef();
 
   return (
     <div
-      ref={ref}
+      //   ref={ref}
       className="snackbar"
       id={props.showSnackbar ? "show" : "hide"}
       style={{
@@ -18,7 +18,8 @@ const Snackbar = (props) => {
           <h1
             style={{ border: "1px solid red" }}
             onClick={() => {
-              ref.current.id = "hide";
+              //   ref.current.id = "hide";
+              props.snackBarStatus(false);
             }}
           >
             &#x2613;

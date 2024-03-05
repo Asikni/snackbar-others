@@ -19,6 +19,7 @@ function SnackBarApp() {
       <button
         className="showSnackbarBttn"
         onClick={() => {
+          console.log("hello");
           setShowSnackbar((prevState) => !prevState);
           setTimeout(setTimer, 5900);
         }}
@@ -29,6 +30,7 @@ function SnackBarApp() {
         message="Task Completed Successfully!"
         type={SnackbarType.success}
         showSnackbar={showSnackbar}
+        snackBarStatus={setShowSnackbar}
       />
     </div>
   );

@@ -21,10 +21,11 @@
 
 #show {
   visibility: visible;
-  animation: fadeInOut 6s;
+  animation: fadeInOut 3s;
 }
 #hide {
   visibility: hidden;
+ 
 }
 
 @keyframes fadeInOut {
