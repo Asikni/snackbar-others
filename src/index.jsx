@@ -9,9 +9,8 @@ const root = ReactDOM.createRoot(el);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter> 
+    <BrowserRouter>
       <App />
-      <SnackBarApp />
     </BrowserRouter>
   </React.StrictMode>
 );

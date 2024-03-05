@@ -19,9 +19,8 @@ function SnackBarApp() {
       <button
         className="showSnackbarBttn"
         onClick={() => {
-          console.log("hello");
           setShowSnackbar((prevState) => !prevState);
-          setTimeout(setTimer, 5900);
+          setTimeout(setTimer, 2900);
         }}
       >
         Show Snackbar

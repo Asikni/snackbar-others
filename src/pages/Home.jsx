@@ -1,5 +1,11 @@
+import SnackBarApp from "../App_snackbar";
+
 function Home() {
-  return <div> Home </div>;
+  return (
+    <div>
+      <SnackBarApp />
+    </div>
+  );
 }
 
 export default Home;
