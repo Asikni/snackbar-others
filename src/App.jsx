@@ -4,7 +4,9 @@ import Contact from "./pages/Contact";
 import Sidebar from "./pages/Sidebar";
 import Option1 from "./pages/Option1";
 import Option2 from "./pages/Option2";
-
+import BookList from "./pages/BookList";
+import Book from "./pages/Book";
+import WindowSizeList from "./Hooks/useEffect";
 
 function App() {
   return (
@@ -21,9 +23,11 @@ function App() {
             </li>
           </ul>
         </nav> */}
-
+        <WindowSizeList />
         <Routes>
           <Route path="/Home" element={<Home />} />
+          <Route path="/books" element={<BookList />} />
+          <Route path="/books/:id" element={<Book />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Sidebar" element={<Sidebar />} />
           <Route path="/Sidebar/Option1" element={<Option1 />} />
