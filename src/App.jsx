@@ -1,9 +1,11 @@
 import { Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Learn from "./pages/learn";
+import Sidebar from "./pages/Sidebar";
 import Option1 from "./pages/Option1";
 import Option2 from "./pages/Option2";
+
+
 function App() {
   return (
     // link is anchor tag underneath, href k badle to
@@ -23,9 +25,9 @@ function App() {
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Learn" element={<Learn />} />
-          <Route path="/Learn/Option1" element={<Option1 />} />
-          <Route path="/Learn/Option2" element={<Option2 />} />
+          <Route path="/Sidebar" element={<Sidebar />} />
+          <Route path="/Sidebar/Option1" element={<Option1 />} />
+          <Route path="/Sidebar/Option2" element={<Option2 />} />
         </Routes>
       </>
     </div>
