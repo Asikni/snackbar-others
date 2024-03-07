@@ -7,6 +7,8 @@ import Option2 from "./pages/Option2";
 import BookList from "./pages/BookList";
 import Book from "./pages/Book";
 import WindowSizeList from "./Hooks/useEffect";
+import ClickIncrease from "./components/ClickIncrease";
+import HoverIncrease from "./components/HoverIncrease";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           </ul>
         </nav> */}
         <WindowSizeList />
+        <ClickIncrease />
+        <HoverIncrease />
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/books" element={<BookList />} />
