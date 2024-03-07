@@ -9,7 +9,7 @@ import Book from "./pages/Book";
 import WindowSizeList from "./Hooks/useEffect";
 import ClickIncrease from "./components/ClickIncrease";
 import HoverIncrease from "./components/HoverIncrease";
-
+import Temperature from "./components/Temp";
 function App() {
   return (
     // link is anchor tag underneath, href k badle to
@@ -28,6 +28,7 @@ function App() {
         <WindowSizeList />
         <ClickIncrease />
         <HoverIncrease />
+        <Temperature />
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/books" element={<BookList />} />
